@@ -3,7 +3,7 @@
 using namespace emscripten;
 
 float lerp(float a, float b) {
-    return a*b;
+    return multiply_in_js(a,b);
 }
 
 EMSCRIPTEN_BINDINGS(my_module) {

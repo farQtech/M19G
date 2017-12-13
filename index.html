@@ -17,32 +17,23 @@
 
 <script src="multiply.js"></script>
 <script>
+
+//Values passed from multiply.cpp-->lerp(a,b)-----
+function multiply_in_js(a, b) {
+    //Return the sum back to lerp(a,b)
+    return a*b;
+}
+
+
+
  function output(event) {
     var x = event.clientX;
     var y = event.clientY;
+    //printing multiplication done by c++ function lerp(a,b)-----
     document.getElementById("output_area").append('multiplying in js ' + x + '  *  ' + y +' = ' + Module.lerp(x,y) + '\n\n') 
   }
-/* function output(event) {
-  
-  document.getElementById("output_area").append('print result: ' + Module.lerp(5,6) +'\n\n' );
-  }*/
 
- /* var Module = {
 
-    'print': function (text) {
-
-      output("print\n" + text);
-
-    },
-
-    'printErr': function (text) {
-
-      output("printErr\n" + text);
-
-    },
-
-  };
-*/
 </script>
 
 </body>
