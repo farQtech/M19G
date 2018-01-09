@@ -1,5 +1,5 @@
 # M19G
-Internship task
+Internship task- The task was to create a webpage that does multiplication on clicking a button
 
 # How to see this!
 
